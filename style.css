@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c; /* Dark background */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.gallery-container {
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+#featured {
+    width: 80%;
+    border: 5px solid #005f99; /* Blue border for featured image */
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin: 5px;
+}
+
+ul li img {
+    width: 120px;
+    height: 80px;
+    cursor: pointer;
+    filter: grayscale(100%); /* Grayscale for inactive images */
+    transition: filter 0.3s;
+}
+
+ul li img:hover {
+    filter: none; /* Remove grayscale on hover */
+}
+
+figcaption {
+    font-size: 1.2em;
+    color: #88c8f5; /* Light blue for figcaption */
+}
